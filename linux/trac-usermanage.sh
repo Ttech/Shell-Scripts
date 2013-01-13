@@ -1,4 +1,6 @@
 #!/bin/bash
+# Simple script
+# to manage Trac users
 
 # bash insanity
 

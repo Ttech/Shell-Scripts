@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# Wake on Lan Boot Handler
+# Required DHCPd (later support for dibbler)
+
 lease_file="/var/lib/dhcp/dhcpd.leases"
 
 function get_client_name(){
