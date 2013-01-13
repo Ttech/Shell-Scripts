@@ -336,3 +336,4 @@ function iptables_remote_add() {
 check_root
 # we need to display a main menu and start
 menu_dialog
+
