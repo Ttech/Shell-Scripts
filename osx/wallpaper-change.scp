@@ -1,0 +1,21 @@
+# Set our time in Minutes
+set computer_time to 2380
+global computer_time
+
+tell application "System Events"
+	set displays to display name of every desktop
+	repeat with i from 1 to (count of displays)
+		set display_name to item i of displays
+		tell (every desktop whose name is display_name)
+			if computer_time < 60 then
+				set change interval to (30 * 60)
+				display dialog (30 * 60)
+			else if minutes > 86400 then
+				set change interval to (30 * 60)
+			else
+				set change interval to (computer_time * 60)
+			end if
+		end tell
+	end repeat
+end tell
+
