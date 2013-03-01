@@ -2,6 +2,17 @@
 set computer_time to 2380
 global computer_time
 
+to get_cycle_time(minutes)
+	# catch any values that might make things break
+	if minutes < 60 then
+		return 30 * 60
+	else if minutes > 86400 then
+		return 30 * 60
+	else
+		return minutes * 60
+	end if
+end get_cycle_time
+
 tell application "System Events"
 	set displays to display name of every desktop
 	repeat with i from 1 to (count of displays)
