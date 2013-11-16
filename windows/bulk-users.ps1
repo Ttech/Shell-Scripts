@@ -3,7 +3,7 @@ $password = "$%G(@#J%G)@#JG"
 #
 # Bulk User Creator (Local)
 #
-# Designed to test network acount management software
+# Designed to test network account management software
 # Probably doesn't have much use to anyone else
 # 
 while ( $i -le 500 ) {
